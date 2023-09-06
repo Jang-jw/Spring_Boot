@@ -25,6 +25,6 @@ public class TestController {
 
 		session.setAttribute("data", "세션에 저장된 값");
 
-		return "Ex01"; // templates/Ex01.hmtl
+		return "Ex01"; // templates/Ex01.hmtl 
 	}
 }
