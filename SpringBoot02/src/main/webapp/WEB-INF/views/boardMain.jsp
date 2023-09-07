@@ -1,6 +1,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -29,16 +30,21 @@
 			<tbody>
 				<%--Ex10.게시글 목록을 출력해봅시다. --%>
 				<%--예시) --%>
+				<c:if test="${!empty list }">
+				<c:forEach var="board" items="${list }">
 				<tr>
-					<td>1</td>
-					<td><a href="#">즐거운 JSP</a></td>
-					<td>smart</td>
-					<td>2023.07.28 15:44:00</td>
+					<td>${board.idx }</td>
+					<td><a href="#">${board.title }</a></td>
+					<td>${board.writer }</td>
+					<td>${board.indate }</td>
+					<td><a href="#">삭제</a></td>
 				</tr>
+				</c:forEach>
+				</c:if>
 			</tbody>
 		</table>
 
-		<a href="writerBoard.jsp"><button id="writer">작성하러가기</button></a>
+		<a href="write"><button id="writer">작성하러가기</button></a>
 	</div>
 
 

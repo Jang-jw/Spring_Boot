@@ -29,7 +29,7 @@ public interface MemberRepository extends JpaRepository<Member, String>{
 	// 메소드의 이름을 기반으로 SQL 문을 생성 
 	// 카멜 기법으로만 만들어야 함
 	// By 절에 있는 컬럼의 이름이 잘 일치해야 한다. 
-	
+
 	// @Query("SQL 문") // 한줄로 적어야 한다. 
 	// public Member ~~~();
 

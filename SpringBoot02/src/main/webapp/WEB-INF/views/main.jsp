@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>  
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -16,7 +17,14 @@
 					<header id="header" class="alt">
 						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
 						<nav>
+							<c:if test="${empty user }">
 								<a href="#menu">로그인</a>
+							</c:if>
+							<c:if test="${!empty user }">
+								<a href="list">게시판</a>
+								<a href="goUpdate">개인정보수정</a>
+								<a href="#">로그아웃</a>
+							</c:if>
 							<!--Ex07. 로그인 한 상태라면 '게시판'버튼과 '개인정보수정', '로그아웃' 버튼을 출력하시오. -->
 						</nav>
 					</header>
@@ -49,7 +57,9 @@
 						<div class="inner">
 							<header class="major">
 								<%--Ex07. 로그인 후 로그인 한 사용자의 세션아이디로 바꾸시오. ex)smart님 환영합니다 --%>
-									<h1>로그인 한 ${user.email }를 출력해주세요</h1>
+								<c:if test="${!empty user }">
+									<h1>${user.email }님의 메인페이지입니다.</h1>
+								</c:if>
 							</header>
 							<div class="content">
 								<p>아래는 지금까지 배운 웹 기술들입니다.<br></p>
@@ -173,7 +183,9 @@
 									<div class="contact-method">
 										<span class="icon alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">로그인 한 사람의 이메일을 출력</a>
+										<c:if test="${!empty user }">
+											<a href="#">${user.email }</a>
+										</c:if>
 										<!-- 로그인 한 사용자의 이메일을 출력하시오 -->
 									</div>
 								</section>
@@ -181,7 +193,9 @@
 									<div class="contact-method">
 										<span class="icon alt fa-phone"></span>
 										<h3>Phone</h3>
-										<span>로그인 한 사람의 전화번호를 출력</span>
+										<c:if test="${!empty user }">
+											<span>${user.tel }</span>
+										</c:if>
 										<!-- 로그인 한 사용자의 전화번호를 출력하시오 -->
 									</div>
 								</section>
@@ -189,7 +203,9 @@
 									<div class="contact-method">
 										<span class="icon alt fa-home"></span>
 										<h3>Address</h3>
-										<span>로그인 한 사람의 집주소를 출력</span>
+										<c:if test="${!empty user }">
+											<span>${user.address }</span>
+										</c:if>
 										<!-- 로그인 한 사용자의 집주소를 출력하시오 -->
 									</div>
 								</section>
