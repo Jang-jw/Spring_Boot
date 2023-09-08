@@ -10,4 +10,6 @@
 - <img src="https://github.com/Jang-jw/Spring_Boot/assets/134268098/ffc7d3f8-346e-48c5-af3b-fdac259c453d" width="500">
 - 09/07 목 : 로그인 기능 / 정보 수정 기능 / 게시글 출력 기능 / 게시글 쓰기 기능
 - <img src="https://github.com/Jang-jw/Spring_Boot/assets/134268098/75ed6593-5aa3-468b-bed6-29ca1794343c" width="500">
+- 09/08 금 : WebSocket / 채팅 구현 
+- <img src="https://github.com/Jang-jw/Spring_Boot/assets/134268098/1959a56f-0788-49a6-915c-6dd74d08abf3" width="500">
 
