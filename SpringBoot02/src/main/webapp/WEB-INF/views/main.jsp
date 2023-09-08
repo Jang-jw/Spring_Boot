@@ -168,10 +168,10 @@
 								<form>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea  id="message" rows="6"></textarea>
+										<textarea id="message" rows="6"></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="button" value="Send Message" class="special" /></li>
+										<li><input id="chatBtn" type="button" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
@@ -184,7 +184,7 @@
 										<span class="icon alt fa-envelope"></span>
 										<h3>Email</h3>
 										<c:if test="${!empty user }">
-											<a href="#">${user.email }</a>
+											<a id="userEmail" href="#">${user.email }</a>
 										</c:if>
 										<!-- 로그인 한 사용자의 이메일을 출력하시오 -->
 									</div>
@@ -239,6 +239,10 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			
+			<c:if test="${!empty user }">
+				<script src="assets/js/chat.js"></script>
+			</c:if>
 
 	</body>
 </html>
