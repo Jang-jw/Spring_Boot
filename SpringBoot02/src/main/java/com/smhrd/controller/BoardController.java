@@ -41,5 +41,11 @@ public class BoardController {
 		
 		return "redirect:/list";
 	}
+	
+	@RequestMapping("/flask")
+	public String flask() {
+		
+		return "Flask";
+	}
 
 }
