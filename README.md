@@ -14,6 +14,6 @@
 ### <img src="https://github.com/Jang-jw/Spring_Boot/assets/134268098/1959a56f-0788-49a6-915c-6dd74d08abf3">
 ### 09/11 월 : 파이썬으로 서버 만들기 / Flask / 매핑 / 아마존 클라우드에 프로젝트 올리기 / IAM
 ### <img src="https://github.com/Jang-jw/Spring_Boot/assets/134268098/6c7f724f-5c5c-4a02-98bc-51870944a0b5">
-### 파이썬 코드 
+### 파이썬 서버 Java 실행 코드 
 ### <img src="https://github.com/Jang-jw/Spring_Boot/assets/134268098/1182da19-5932-489b-84ed-fd2b288602a9">
 ### 09/12 화 : 스프링 수업 끝! 
