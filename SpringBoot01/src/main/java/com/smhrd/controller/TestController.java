@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class TestController {
 
-	@RequestMapping("/ex01")
+	@RequestMapping("/")
 	public String ex01(Model model, HttpSession session) {
 
 		model.addAttribute("name", "김준우");
