@@ -44,7 +44,8 @@
 			</tbody>
 		</table>
 
-		<a href="write"><button id="writer">작성하러가기</button></a>
+		<a href="/write"><button id="writer">작성하러가기</button></a>
+		<a href="/"><button>메인으로</button></a>
 	</div>
 
 

@@ -1,11 +1,9 @@
 package com.smhrd.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import com.smhrd.entity.Member;
 
-@Repository
 public interface MemberRepository extends JpaRepository<Member, String>{
 	
 	// JPA 의 DAO (Repository) 는 interface 로 구현

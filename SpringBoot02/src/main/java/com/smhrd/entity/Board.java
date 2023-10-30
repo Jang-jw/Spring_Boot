@@ -34,7 +34,7 @@ public class Board {
 	private Date indate;
 	
 	// count int default 0 
-	@Column(columnDefinition = "int dafault 0", insertable = false, updatable = false)
+	@Column(columnDefinition = "int default 0", insertable = false, updatable = false)
 	private int count;
 
 }
